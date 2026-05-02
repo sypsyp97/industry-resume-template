@@ -17,6 +17,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{fontawesome5}
+\usepackage{graphicx}
 \usepackage[T1]{fontenc}
 \usepackage{anyfontsize}
 
@@ -71,8 +72,10 @@
 
 \begin{document}
 
-\begin{center}
-    \textbf{\Huge Albert Einstein} \\[4pt]
+\noindent
+\begin{minipage}[t]{0.72\textwidth}
+    \vspace{0pt}%
+    \textbf{\Huge Albert Einstein} \\[5pt]
     \small
     Princeton, NJ \hspace{6pt} | \hspace{6pt}
     albert.einstein@example.com \hspace{6pt} | \hspace{6pt}
@@ -80,8 +83,14 @@
     \linkedtext{https://en.wikipedia.org/wiki/Albert_Einstein}{Website} \hspace{6pt} | \hspace{6pt}
     \linkedtext{https://github.com/example}{GitHub} \hspace{6pt} | \hspace{6pt}
     \linkedtext{https://www.linkedin.com/in/example}{LinkedIn}
-\end{center}
-\vspace{-8pt}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.25\textwidth}
+    \vspace{-14pt}%
+    \raggedleft
+    \includegraphics[width=2.6cm,height=2.6cm,keepaspectratio]{assets/einstein.jpg}
+\end{minipage}
+\vspace{-4pt}
 
 \section{Experience}
 \resumeHeadingListStart
